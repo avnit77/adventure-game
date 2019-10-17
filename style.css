@@ -1,0 +1,39 @@
+iframe{
+    pointer-events: none;
+}
+
+Header{
+    background-color:  hsla(204, 21%, 59%, 0.2);
+}
+
+h2{
+    margin-left: 50px;
+    margin-top: 150px;
+    margin-right: 0%;
+    padding-right: 0%;
+    font-size: 50px;
+    color: rgba(255,255,255,.3);
+    background: #1a1a1a;
+    text-shadow: 0 0 15px rgba(255,255,255,.5), 0 0 10px rgba(255,255,255,.5);
+    background-color: hsla(204, 21%, 59%, 0.2);
+}
+
+fieldset {
+    color: white;
+    background-color:  hsla(204, 21%, 59%, 0.2);
+}
+label {
+    margin: 0%;
+    padding: 0%;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+#avatars{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
