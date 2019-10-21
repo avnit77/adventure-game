@@ -5,9 +5,7 @@ const possessed = {
         top: '89%',
         left: '44%'
     },
-    image: 'possessed.jpg',
-    //audio: 'monsters.wav',
-    //action: 'monster-scream.wav',
+    image: 'possessed.png',
     description: `
         Woah! You rounded a corner and almost ran right into an unblinking child facing you stiffly in the hallway.
         Sure does like to stare silently. And their eyes are jet black. Is that a puberty thing? They're probably fine, right?
@@ -54,13 +52,11 @@ const possessed = {
 const prize = {
     id: 'prize',
     title: 'Trophy Room',
-    map: {
+    house: {
         top: '57%',
         left: '67%'
     },
-    image: 'prize.jpg',
-   // audio: 'dragon.wav',
-   // action: 'dragon-growl.aiff',
+    image: 'prize.png',
     description: `
         You open a door and are delighted to find exactly what you want more than anything else in the world! Sweet!
         Obviously you're still going to leave the nightmare house, but maybe you should just run into the room
@@ -103,9 +99,6 @@ const prize = {
     }]
 };
 
-
-
 const tasks = [possessed, prize];
-
 
 export default tasks;

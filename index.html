@@ -5,61 +5,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <title>Game</title>
 </head>
 
 <body>
-        <div style="position: fixed; z-index: -99; width: 100%; height: 100%">
-                <iframe frameborder="0" height="100%" width="100%" autoplay="autoplay"
-                  src="https://youtube.com/embed/lqmJGLNjPRE?controls=0&showinfo=0&autoplay=1&controls=0&showinfo=0&autohide=1">
-                </iframe>
-        </div>
+    <div class =video-container style="position: absolute; z-index: -99; min-width: 100%; min-height: 100%">
+             <video min-height="100%" min-width="100%" autoplay loop
+                  src="https://static.videezy.com/system/resources/previews/000/018/034/original/Version4.mp4" type="video/mp4">
+            </video>
+    </div>
 
     <header>
-        <h1></h1>
+        <h1>Will you escape the nightmare house?</h1>
     </header>
-    
     <main> 
-        <h2>
-            Will you escape the nightmare house?
-        </h2>
+
         <form id="user-sign-up">
             <p class="text-prompt">
-                <label for="name">Your Name:</label>
+                <label for="name">What's your name?</label>
                 <input id="name" name="name" required>
             </p>
             <fieldset>
                 <legend>How did you end up in the nightmare house?</legend>
-                <p id="avatars">
+                <section id="avatars">
                     <label>
-                        <input type="radio" name="player" required value="trick">
-                        <img src="assets/trick.png" height=100px>
-                        You were trick-or-treating when the door to the house blew open mysteriously and a voice called you in. You assumed for the candy. Turns out: only nightmares. 
+                        <img src="assets/trick.png" height=100px class="radio-image">
+                        <input type="radio" name="player" required value="trick" class="radio" checked/>
                     </label>
+                    <p>
+                    You were trick-or-treating when the door to the house blew open mysteriously and a voice called you in. You assumed for the candy. Turns out: only nightmares. 
+                    </p>
                     <label>
-                        <input type="radio" name="player" required value="dare">
-                        <img src="assets/dare.jpg"height=100px>
-                        You've always felt uneasy about the house, but the resident <em>cool kid</em> said you might be <em>cool enough</em> for the <em>cool party</em> if you spent the night in the nightmare house.
+                        <img src="assets/dare.png"height=100px class="radio-image dare">
+                        <input type="radio" name="player" required value="dare" class="radio dare"/>
                     </label>
+                    <p>
+                    You've always felt uneasy about the house, but the resident <em>cool kid</em> said you might be <em>cool enough</em> for the <em>cool party</em> if you spent the night in the nightmare house.
+                    </p>
                     <label>
-                        <input type="radio" name="player" required value="owner">
-                        <img src="assets/homeowner.png" height=100px>
-                        With the cost of living rapidly on the rise, you couldn't turn down the incredible deal you got from a old man you've never seen before who gave you the house for free on condition that you signed the contract in a teensy bit of blood.
+                        <img src="assets/owner.png" height=100px class="radio-image">
+                        <input type="radio" name="player" required value="owner" class="radio"/>
                     </label>
+                    <p>
+                    With the cost of living rapidly on the rise, you couldn't turn down the incredible deal you got from a old man you've never seen before who gave you the house for free on condition that you signed the contract in a teensy bit of blood.
+                    </p>
                     <label>
-                        <input type="radio" name="player" required value="monster">
-                        <img src="assets/monster.jpg" height=100px>
-                        You're just a misunderstood monster who thought the gig haunting the nightmare house sounded fun at the time, but now you're a slave to the grind and you're ready to follow your real passion: photography.
+                        <img src="assets/monster.png" height=100px class="radio-image monster">
+                        <input type="radio" name="player" required value="monster" class="radio monster"/>
                     </label>
-                </p>
+                    <p>
+                    You're just a misunderstood monster who thought the gig haunting the nightmare house sounded fun at the time, but now you're a slave to the grind and you're ready to follow your real passion: photography.
+                    </p>
+                </section>
             </fieldset>
+        <div class=button>
             <button>ESCAPE THE NIGHTMARE HOUSE!</button>
+        </div>
         </form>
     </main>
 
 
-    <script type="module" src="home/home.js"></script>
+    <script type="module" src="./home/home.js"></script>
 </body>
 
 </html>

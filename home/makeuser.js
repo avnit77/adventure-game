@@ -1,10 +1,10 @@
-// build a simple JS user out of the weird formdata object
 function makeUser(formData) {
     const user = {
         name: formData.get('name'),
-        race: formData.get('player'),
+        player: formData.get('player'),
         health: 100,
-        fear: 50,
+        sanity: 50,
+        leave: 0,
         completed: {}
     };
 
@@ -13,9 +13,10 @@ function makeUser(formData) {
 
 export const newMakeUser = (formData) => ({
     name: formData.get('name'),
-    race: formData.get('player'),
+    player: formData.get('player'),
     health: 100,
-    fear: 50,
+    sanity: 50,
+    leave: 0,
     completed: {}
 });
 
