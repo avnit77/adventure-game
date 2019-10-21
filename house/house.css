@@ -1,0 +1,32 @@
+
+body{
+    background-color: black;
+    background-image: url("../assets/house.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#tasks {
+    position: relative;
+    width: 90vw;
+    height: calc(90vw * 642 / 900);
+    margin: auto;
+}
+
+.tasks {
+    position: absolute;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+
+.task.completed {
+    color: whitesmoke;
+    font-size: .9em;
+}
+
+.task.completed:after {
+    content: ' ✔';
+}
+header{
+    margin: 0%;
+}
